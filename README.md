@@ -32,7 +32,7 @@ DeepWalk is an **unsupervised learning technique** that learns node embeddings i
 ## ⚙️ Installation & Setup
 
 1. 🔹 Clone the Repository
-git clone https://github.com/prajwaldevaraj-2001/DeepWalk-Online-Learning-of-Social-Representations.git
+git clone https://github.com/prajwaldevaraj-2001/DeepWalk-Online-Learning-of-Social-Representations.git </br>
 cd DeepWalk-Online-Learning-of-Social-Representations
 
 2. 🔹 Install Dependencies
@@ -40,15 +40,18 @@ pip install -r requirements.txt
 
 
 ## 🔧 Usage
-📌 Step 1: Prepare the Graph  
+  📌 Step 1: Prepare the Graph  
 - Load a graph using NetworkX.
-- Convert real-world datasets (e.g., social networks) into graph structures.
+- Convert real-world datasets (e.g., social networks) into graph structures.</br>
+
 📌 Step 2: Generate Random Walks
 - from random_walks import generate_walks
-- walks = generate_walks(graph, num_walks=10, walk_length=40)
+- walks = generate_walks(graph, num_walks=10, walk_length=40)</br>
+
 📌 Step 3: Train Node Embeddings
 - from train_embeddings import train_deepwalk_model
-- embeddings = train_deepwalk_model(walks, dimensions=128, window_size=5)
+- embeddings = train_deepwalk_model(walks, dimensions=128, window_size=5)</br>
+
 📌 Step 4: Visualize Embeddings (Optional)
 - from visualize_embeddings import plot_embeddings
 - plot_embeddings(embeddings, graph)
